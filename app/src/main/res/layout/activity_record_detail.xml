@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RecordDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ic_person_black"
+            app:c_border="true"
+            app:c_border_width="1dp"
+            app:c_border_color="#737373"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="제목 : "
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="User Name"
+                    android:textColor="#737373" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="게시물 업로드 : "
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/addedDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="Time of added"
+                    android:textColor="#737373" />
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="시간 : "
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/timeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="TIME"
+                    android:textColor="#737373" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="장소 : "
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/addressTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="WHERE"
+                    android:textColor="#737373" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="내용 : "
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/contenttTv"
+                    android:layout_width="250dp"
+                    android:layout_height="300dp"
+
+                    android:padding="10dp"
+                    android:text="내용"
+                    android:textColor="#737373" />
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
